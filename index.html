@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bino Mariyan | AI/ML Engineer & Full-Stack Developer</title>
+  <meta name="description"
+    content="Portfolio of Bino Mariyan - Computer Science M.Tech candidate, AI/ML Engineer, and Full-Stack Developer specializing in Generative AI, Multi-Agent Systems, RAG, and Cloud Deployment.">
+  <meta name="keywords"
+    content="Bino Mariyan, AI Engineer, Machine Learning, Full-Stack Developer, RAG, Multi-Agent Systems, FastAPI, Python, Portfolio">
+  <meta name="author" content="Bino Mariyan">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Bino Mariyan | AI/ML Engineer & Full-Stack Developer">
+  <meta property="og:description"
+    content="Explore projects, technical skills, and research by Bino Mariyan in Generative AI, Multi-Agent Systems, and Cloud Platforms.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Ambient Canvas Background -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Sticky Glass Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="navbar">
+      <a href="#hero" class="nav-brand" aria-label="Bino Mariyan Home">
+        <span class="brand-monogram">BM</span>
+        <span class="brand-name">Bino Mariyan</span>
+      </a>
+
+      <div class="nav-status-badge">
+        <span class="status-indicator"></span>
+        <span class="status-text">Open to AI/ML & Engineering Roles</span>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="resume-btn" class="btn btn-outline btn-sm" aria-label="View Resume Modal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Resume</span>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">Let's Talk</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-main-row">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="badge-icon">⚡</span>
+              <span>M.Tech Computer Science &bull; AI/ML & Full-Stack</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="name-gradient">Bino Mariyan</span><br>
+              <span class="hero-subtitle">Architecting AI-Native Platforms & Hybrid ML Systems.</span>
+            </h1>
+
+            <p class="hero-description">
+              Passionate software engineer specializing in <strong>Generative AI</strong>, <strong>Multi-Agent
+                Orchestration</strong>, <strong>RAG Pipelines</strong>, and scalable <strong>Cloud Deployments</strong>.
+              I bridge algorithmic intelligence with production-ready software architecture to solve complex industrial
+              problems.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary btn-lg" id="hero-projects-btn">
+                <span>Explore Projects</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-secondary btn-lg" id="hero-contact-btn">
+                <span>Get In Touch</span>
+              </a>
+              <a href="https://github.com/binomariyan193-dotcom" target="_blank" rel="noopener noreferrer"
+                class="btn btn-icon" aria-label="GitHub Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </a>
+              <a href="https://linkedin.com/in/bino-mariyan-588280200" target="_blank" rel="noopener noreferrer"
+                class="btn btn-icon" aria-label="LinkedIn Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 3D Interactive Responsive Professional Portrait Visual -->
+          <div class="hero-visual-wrapper">
+            <div class="avatar-3d-scene" id="avatar-3d-scene">
+              <div class="avatar-3d-card" id="avatar-3d-card" tabindex="0" role="region"
+                aria-label="3D Interactive Portrait of Bino Mariyan">
+                <!-- Glare light highlight layer -->
+                <div class="avatar-glare" id="avatar-glare"></div>
+
+                <!-- Ambient glowing background backdrop -->
+                <div class="avatar-backdrop-glow"></div>
+
+                <!-- Portrait Image Container -->
+                <div class="avatar-img-frame">
+                  <img src="assets/profile.jpeg" alt="Bino Mariyan - AI/ML Engineer &amp; Full-Stack Developer"
+                    class="avatar-img" id="avatar-img" onerror="this.onerror=null; this.src='assets/profile.jpg';">
+                </div>
+
+                <!-- Hologram Metadata Bar -->
+                <div class="avatar-meta-bar">
+                  <div class="avatar-meta-left">
+                    <span class="status-indicator"></span>
+                    <span class="avatar-name">Bino Mariyan</span>
+                  </div>
+                  <span class="avatar-tag">Open to WORK</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Highlight Metric Badges -->
+        <div class="hero-stats-grid">
+          <div class="stat-card">
+            <span class="stat-value">8.5 / 8.6</span>
+            <span class="stat-label">M.Tech & B.Tech CGPA</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">3x</span>
+            <span class="stat-label">Cloud Certified (AWS & Azure)</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">AI-Native</span>
+            <span class="stat-label">Multi-Agent & RAG SaaS</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">Production</span>
+            <span class="stat-label">FastAPI & Supabase Stack</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Overview</span>
+          <h2 class="section-title">Engineering With Purpose & Precision</h2>
+          <p class="section-subtitle">Bridging machine learning research with industrial-grade software engineering.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-card glass-card">
+            <h3>Who I Am</h3>
+            <p>
+              I am a Computer Science Master's candidate at <strong>KL University</strong> with an analytical foundation
+              developed through my Bachelor's in Electronics and Communication Engineering. My journey lies at the
+              intersection of deep algorithmic intelligence and resilient systems engineering.
+            </p>
+            <p>
+              Whether it is orchestrating multi-agent systems for regulatory compliance audits in food manufacturing,
+              developing hybrid temporal-tree machine learning models for clinical therapeutics, or engineering
+              low-level thermographic signal pipelines on Raspberry Pi, I thrive on turning complex domain bottlenecks
+              into elegant, automated solutions.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-bullet"></span>
+                <div>
+                  <strong>AI Architectures:</strong> Fine-tuning LLM pipelines, autonomous multi-agent swarms, vector
+                  retrieval (RAG).
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-bullet"></span>
+                <div>
+                  <strong>Backend & Distributed Systems:</strong> Asynchronous microservices with FastAPI, PostgreSQL,
+                  Supabase, and Redis caching.
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-bullet"></span>
+                <div>
+                  <strong>Cloud & DevOps:</strong> Infrastructure on AWS and Azure, CI/CD pipelines, containerization,
+                  and serverless hosting.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-sidebar">
+            <div class="glass-card info-card">
+              <h4>Quick Bio</h4>
+              <ul class="info-list">
+                <li><span class="info-key">Location:</span> <span class="info-val">Guntur, Andhra Pradesh, India</span>
+                </li>
+                <li><span class="info-key">Degree:</span> <span class="info-val">M.Tech Computer Science
+                    (2024–2026)</span></li>
+                <li><span class="info-key">Undergrad:</span> <span class="info-val">B.Tech ECE (2020–2024, 8.6
+                    CGPA)</span></li>
+                <li><span class="info-key">Email:</span> <span
+                    class="info-val font-mono">binomariyan193@gmail.com</span></li>
+                <li><span class="info-key">Phone:</span> <span class="info-val font-mono">+91 81429-11443</span></li>
+                <li><span class="info-key">Availability:</span> <span class="info-val badge-tag green">Immediate /
+                    Internship / Full-time</span></li>
+              </ul>
+            </div>
+
+            <div class="glass-card interests-card">
+              <h4>Extracurricular Pursuits</h4>
+              <div class="tags-cloud">
+                <span class="chip">📸 Photography & Visual Arts</span>
+                <span class="chip">🏍️ Long-distance Motorcycle Touring</span>
+                <span class="chip">🌐 Open-Source Contributing</span>
+                <span class="chip">⚙️ Embedded Systems & Edge AI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="section bg-tint" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">Technical Skills & Arsenal</h2>
+          <p class="section-subtitle">Proficiencies honed across production applications, academic research, and cloud
+            engineering.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1: AI & ML -->
+          <div class="skill-card glass-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-box cyan-glow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+                  strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="5" r="2" />
+                  <circle cx="5" cy="12" r="2" />
+                  <circle cx="19" cy="12" r="2" />
+                  <circle cx="8" cy="19" r="2" />
+                  <circle cx="16" cy="19" r="2" />
+
+                  <line x1="10.5" y1="6.5" x2="6.5" y2="10.5" />
+                  <line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
+                  <line x1="6.5" y1="13.5" x2="7" y2="17" />
+                  <line x1="17.5" y1="13.5" x2="17" y2="17" />
+                  <line x1="7" y1="12" x2="17" y2="12" />
+                </svg>
+              </div>
+              <div>
+                <h3>AI & Machine Learning</h3>
+                <span class="skill-sub">Intelligent Systems & Modeling</span>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li>
+                <div class="skill-meta"><span>Generative AI & LLMs</span></div>
+
+              </li>
+              <li>
+                <div class="skill-meta"><span>Multi-Agent Swarms & Orchestration</span></div>
+
+              </li>
+              <li>
+                <div class="skill-meta"><span>Retrieval-Augmented Generation (RAG)</span>
+                </div>
+
+              </li>
+              <li>
+                <div class="skill-meta"><span>Prompt Engineering & Optimization</span>
+                </div>
+
+              </li>
+              <li>
+                <div class="skill-meta"><span>Hybrid ML (LSTM, XGBoost, Scikit-learn)</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Card 2: Backend & Web -->
+          <div class="skill-card glass-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-box purple-glow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <div>
+                <h3>Web & Database Engineering</h3>
+                <span class="skill-sub">Scalable Backends & APIs</span>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li>
+                <div class="skill-meta"><span>FastAPI & REST APIs</span></div>
+              </li>
+              <li>
+                <div class="skill-meta"><span>Full-Stack Development</span></div>
+              </li>
+              <li>
+                <div class="skill-meta"><span>PostgreSQL & SQL Modeling</span>
+                </div>
+              </li>
+              <li>
+                <div class="skill-meta"><span>Supabase & Realtime Data</span>
+                </div>
+              </li>
+              <li>
+                <div class="skill-meta"><span>MongoDB & Document Stores</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Card 3: Cloud & DevOps -->
+          <div class="skill-card glass-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-box emerald-glow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Cloud, DevOps & Tooling</h3>
+                <span class="skill-sub">Deployment & Infrastructure</span>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li>
+                <div class="skill-meta"><span>Amazon Web Services (AWS)</span>
+                </div>
+              </li>
+              <li>
+                <div class="skill-meta"><span>Microsoft Azure (AZ-900 / DP-900)</span></div>
+              </li>
+              <li>
+                <div class="skill-meta"><span>Git & GitHub Workflows</span></div>
+              </li>
+              <li>
+                <div class="skill-meta"><span>Render, Vercel & Cloud Deployments</span></div>
+              </li>
+              <li>
+                <div class="skill-meta"><span>SDLC & Agile Development</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Card 4: Languages & Foundation -->
+          <div class="skill-card glass-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-box blue-glow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3>Core Languages & Foundations</h3>
+                <span class="skill-sub">Algorithmic & Hardware Logic</span>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li>
+                <div class="skill-meta"><span>Python (Data, Async, Backend)</span>
+                </div>
+              </li>
+              <li>
+                <div class="skill-meta"><span>C Programming & Low-Level</span>
+                </div>
+              </li>
+              <li>
+                <div class="skill-meta"><span>SQL & Relational Schemas</span></div>
+              </li>
+              <li>
+                <div class="skill-meta"><span>HTML5 & Modern CSS3</span></div>
+              </li>
+              <li>
+                <div class="skill-meta"><span>Object-Oriented Programming (OOP)</span></div>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Featured Projects & Case Studies</h2>
+          <p class="section-subtitle">A showcase of production-grade platforms, hybrid AI algorithms, and edge systems.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="project-filters" id="project-filters">
+          <button class="filter-btn active" data-filter="all">All Systems</button>
+          <button class="filter-btn" data-filter="ai-agents">AI & Multi-Agent</button>
+          <button class="filter-btn" data-filter="fullstack">SaaS & Full-Stack</button>
+          <button class="filter-btn" data-filter="edge">Edge AI & Hardware</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1: Food-Processing-Operations-Platform -->
+          <article class="project-card glass-card" data-category="ai-agents fullstack">
+            <div class="project-banner cyan-accent">
+              <div class="project-badges">
+                <span class="project-type-badge">Industrial AI-Native SaaS</span>
+                <span class="project-status-badge">V2 Production Ready</span>
+              </div>
+              <div class="project-icon-art">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                  </path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Food-Processing-Operations-Platform</h3>
+              <p class="project-desc">
+                Architected an industrial-grade, AI-native SaaS platform designed for agricultural and food processing
+                facilities across dairy, grain milling, canning, meat, and bottling verticals.
+              </p>
+
+              <div class="project-features">
+                <div class="feat-item">
+                  <span class="feat-bullet">&bull;</span>
+                  <span><strong>Real-time Operations:</strong> Batch tracking, line velocity, OEE metrics, and FEFO
+                    inventory management.</span>
+                </div>
+                <div class="feat-item">
+                  <span class="feat-bullet">&bull;</span>
+                  <span><strong>Multi-Agent Compliance RAG:</strong> Automated compliance audits indexing HACCP, ISO
+                    22000, FDA FSMA, and SQF Edition 9 standards.</span>
+                </div>
+                <div class="feat-item">
+                  <span class="feat-bullet">&bull;</span>
+                  <span><strong>Predictive QC:</strong> Early failure anomaly detection and quality control predictions
+                    across plant operations.</span>
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">FastAPI</span>
+                <span class="tag">Multi-Agent Systems</span>
+                <span class="tag">RAG</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">HACCP / ISO 22000</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com/binomariyan193-dotcom/Food-Processing-Operations-Platform-V2"
+                  target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  <span>Repository (V2)</span>
+                </a>
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="food-platform">
+                  <span>Architecture</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Hybrid Ensemble Model (XGBoost + LSTM) -->
+          <article class="project-card glass-card" data-category="ai-agents">
+            <div class="project-banner purple-accent">
+              <div class="project-badges">
+                <span class="project-type-badge">Clinical Healthcare AI</span>
+                <span class="project-status-badge">Research & Validation</span>
+              </div>
+              <div class="project-icon-art">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Hybrid Ensemble: XGBoost & LSTM for Personalized Medication</h3>
+              <p class="project-desc">
+                Engineered an intelligent clinical decision-support model to recommend personalized antihypertensive
+                regimens by mining complex Electronic Health Records (EHR).
+              </p>
+
+              <div class="project-features">
+                <div class="feat-item">
+                  <span class="feat-bullet">&bull;</span>
+                  <span><strong>Temporal-Tabular Coupling:</strong> Coupled LSTM networks for longitudinal BP trajectory
+                    modeling with XGBoost for high-dimensional clinical covariates.</span>
+                </div>
+                <div class="feat-item">
+                  <span class="feat-bullet">&bull;</span>
+                  <span><strong>Non-Linear Covariates:</strong> Synthesized laboratory biomarkers, patient demographics,
+                    and drug interactions with high fidelity.</span>
+                </div>
+                <div class="feat-item">
+                  <span class="feat-bullet">&bull;</span>
+                  <span><strong>Clinical Risk Mitigation:</strong> Optimized evaluation metrics specifically tailored
+                    for adverse risk minimization and therapy selection.</span>
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">LSTM Networks</span>
+                <span class="tag">XGBoost</span>
+                <span class="tag">EHR Mining</span>
+                <span class="tag">Clinical AI</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-sm btn-outline project-modal-trigger" data-project="hybrid-med">
+                  <span>View Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Raspberry Pi Infrared Imaging for NDT -->
+          <article class="project-card glass-card" data-category="edge">
+            <div class="project-banner emerald-accent">
+              <div class="project-badges">
+                <span class="project-type-badge">Edge AI & Hardware NDT</span>
+                <span class="project-status-badge">Experimental Prototype</span>
+              </div>
+              <div class="project-icon-art">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Raspberry Pi Infrared Imaging for Non-Destructive Testing (NDT)</h3>
+              <p class="project-desc">
+                Designed and implemented an active thermographic testing apparatus utilizing a FLIR Lepton sensor
+                integrated with a Raspberry Pi for structural defect diagnosis.
+              </p>
+
+              <div class="project-features">
+                <div class="feat-item">
+                  <span class="feat-bullet">&bull;</span>
+                  <span><strong>Active Thermography:</strong> Controlled heat excitation followed by high-frequency
+                    radiometric thermal response acquisition.</span>
+                </div>
+                <div class="feat-item">
+                  <span class="feat-bullet">&bull;</span>
+                  <span><strong>Digital Signal Processing:</strong> Applied spatial contrast filtering and Fourier phase
+                    thermography algorithms.</span>
+                </div>
+                <div class="feat-item">
+                  <span class="feat-bullet">&bull;</span>
+                  <span><strong>Aerospace Inspection:</strong> Precise detection of internal delamination, voids, and
+                    subsurface flaws in aerospace composite specimens.</span>
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">Raspberry Pi</span>
+                <span class="tag">FLIR Lepton</span>
+                <span class="tag">Python</span>
+                <span class="tag">Computer Vision</span>
+                <span class="tag">DSP</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-sm btn-outline project-modal-trigger" data-project="ndt-imaging">
+                  <span>View Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section bg-tint" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-title">Industry Certifications</h2>
+          <p class="section-subtitle">Validated knowledge across leading hyperscaler cloud ecosystems and data
+            architectures.</p>
+        </div>
+
+        <div class="certifications-grid">
+          <!-- AWS Cert -->
+          <div class="cert-card glass-card">
+            <div class="cert-header">
+              <div class="cert-badge-icon aws-glow">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                </svg>
+              </div>
+              <span class="cert-issuer">Amazon Web Services</span>
+            </div>
+            <h3 class="cert-title">AWS Certified Cloud Practitioner</h3>
+            <p class="cert-desc">
+              Demonstrates foundational understanding of AWS Cloud services, security architecture, IAM, cost
+              governance, and scalable cloud deployment best practices.
+            </p>
+            <div class="cert-footer">
+              <span class="badge-tag aws">AWS Verified</span>
+              <span class="cert-status">Active Credential</span>
+            </div>
+          </div>
+
+          <!-- Azure AZ-900 -->
+          <div class="cert-card glass-card">
+            <div class="cert-header">
+              <div class="cert-badge-icon azure-glow">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M13.05 4.24l-6.83 12.18 3.52 3.34 6.83-12.18-3.52-3.34zm-8.8 11.26l3.52 3.34-3.52 3.16h5.86l4.63-4.17-6.95-6.6-3.54 4.27z" />
+                </svg>
+              </div>
+              <span class="cert-issuer">Microsoft</span>
+            </div>
+            <h3 class="cert-title">Microsoft Certified: Azure Fundamentals (AZ-900)</h3>
+            <p class="cert-desc">
+              Validates expertise in core cloud concepts, Azure architectural components, security, privacy, compliance,
+              and lifecycle management.
+            </p>
+            <div class="cert-footer">
+              <span class="badge-tag azure">Microsoft Certified</span>
+              <span class="cert-status">Active Credential</span>
+            </div>
+          </div>
+
+          <!-- Azure DP-900 -->
+          <div class="cert-card glass-card">
+            <div class="cert-header">
+              <div class="cert-badge-icon data-glow">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 3C7.58 3 4 4.79 4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7c0-2.21-3.58-4-8-4zm0 2c3.87 0 6 1.5 6 2s-2.13 2-6 2-6-1.5-6-2 2.13-2 6-2zm6 12c0 .5-2.13 2-6 2s-6-1.5-6-2v-2.23c1.61.78 3.73 1.23 6 1.23s4.39-.45 6-1.23V17zm0-5c0 .5-2.13 2-6 2s-6-1.5-6-2v-2.23c1.61.78 3.73 1.23 6 1.23s4.39-.45 6-1.23V12z" />
+                </svg>
+              </div>
+              <span class="cert-issuer">Microsoft</span>
+            </div>
+            <h3 class="cert-title">Microsoft Certified: Azure Data Fundamentals (DP-900)</h3>
+            <p class="cert-desc">
+              Certification in relational and non-relational data workloads, modern data warehouses, real-time
+              analytics, and data pipeline fundamentals on Microsoft Azure.
+            </p>
+            <div class="cert-footer">
+              <span class="badge-tag azure">Microsoft Certified</span>
+              <span class="cert-status">Active Credential</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Trajectory</span>
+          <h2 class="section-title">Academic Background & Education</h2>
+          <p class="section-subtitle">Consistent academic excellence across Computer Science, Electronics, and
+            foundational sciences.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-date">2024 – 2026 (Expected)</div>
+              <h3 class="timeline-degree">Master of Technology (M.Tech) in Computer Science and Engineering</h3>
+              <div class="timeline-institution">KL University &bull; Guntur, Andhra Pradesh, India</div>
+              <div class="timeline-badge-row">
+                <span class="cgpa-pill">CGPA: 8.5 / 10.0</span>
+                <span class="focus-pill">Specialization: AI/ML, SaaS Architectures & Multi-Agent Systems</span>
+              </div>
+              <p class="timeline-desc">
+                Engaged in advanced coursework covering Distributed Algorithms, Machine Learning Systems, Neural
+                Networks, Cloud Native Engineering, and Scalable Databases.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-date">2020 – 2024</div>
+              <h3 class="timeline-degree">Bachelor of Technology (B.Tech) in Electronics & Communication Engineering
+              </h3>
+              <div class="timeline-institution">KL University &bull; Guntur, Andhra Pradesh, India</div>
+              <div class="timeline-badge-row">
+                <span class="cgpa-pill">CGPA: 8.6 / 10.0</span>
+                <span class="focus-pill">Honors & Hardware/Software Integration</span>
+              </div>
+              <p class="timeline-desc">
+                Developed rigorous fundamentals in Digital Signal Processing (DSP), Microprocessors, Embedded Linux, and
+                Python algorithmic computing. Led the infrared thermography aerospace NDT capstone.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-date">2018 – 2020</div>
+              <h3 class="timeline-degree">Intermediate (MPC: Mathematics, Physics, Chemistry)</h3>
+              <div class="timeline-institution">Sri Chaitanya Junior College &bull; Guntur, Andhra Pradesh, India</div>
+              <div class="timeline-badge-row">
+                <span class="cgpa-pill">CGPA: 8.1 / 10.0</span>
+              </div>
+              <p class="timeline-desc">
+                Intensive preparation in advanced mathematical analysis, differential calculus, linear algebra, and
+                classical physics.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-date">2017 – 2018</div>
+              <h3 class="timeline-degree">Secondary School Certificate (SSC)</h3>
+              <div class="timeline-institution">Bhashyam Public School &bull; Guntur, Andhra Pradesh, India</div>
+              <div class="timeline-badge-row">
+                <span class="cgpa-pill">CGPA: 9.5 / 10.0</span>
+              </div>
+              <p class="timeline-desc">
+                Graduated with distinction and academic honors across mathematics, general science, and computational
+                foundations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section class="section bg-tint" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Collaboration</span>
+          <h2 class="section-title">Let's Build Something High-Impact</h2>
+          <p class="section-subtitle">Interested in discussing AI architectures, software engineering opportunities, or
+            innovative collaborations?</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Email Card -->
+          <div class="contact-card glass-card">
+            <div class="contact-card-top">
+              <div class="contact-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <span class="badge-tag green">Preferred</span>
+            </div>
+            <div class="contact-card-details">
+              <span class="label">Email Address</span>
+              <span class="val font-mono" id="email-text">binomariyan193@gmail.com</span>
+            </div>
+            <div class="contact-card-actions">
+              <button class="btn btn-sm btn-outline" id="copy-email-btn" title="Copy email address">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Copy</span>
+              </button>
+              <a href="mailto:binomariyan193@gmail.com" class="btn btn-sm btn-primary">
+                <span>Send Email</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="contact-card glass-card">
+            <div class="contact-card-top">
+              <div class="contact-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <span class="badge-tag azure">Direct Line</span>
+            </div>
+            <div class="contact-card-details">
+              <span class="label">Phone / WhatsApp</span>
+              <span class="val font-mono" id="phone-text">+91 81429-11443</span>
+            </div>
+            <div class="contact-card-actions">
+              <button class="btn btn-sm btn-outline" id="copy-phone-btn" title="Copy phone number">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Copy</span>
+              </button>
+              <a href="tel:+918142911443" class="btn btn-sm btn-secondary">
+                <span>Call Directly</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Location Card -->
+          <div class="contact-card glass-card">
+            <div class="contact-card-top">
+              <div class="contact-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <span class="status-pill">IST (UTC+5:30)</span>
+            </div>
+            <div class="contact-card-details">
+              <span class="label">Current Location</span>
+              <span class="val">Guntur, Andhra Pradesh, India</span>
+            </div>
+            <div class="contact-card-actions">
+              <span class="location-availability">📍 Open to Relocation & Remote Roles</span>
+            </div>
+          </div>
+
+          <!-- Professional Profiles Card -->
+          <div class="contact-card glass-card">
+            <div class="contact-card-top">
+              <div class="contact-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="18" cy="5" r="3"></circle>
+                  <circle cx="6" cy="12" r="3"></circle>
+                  <circle cx="18" cy="19" r="3"></circle>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+              </div>
+              <span class="badge-tag aws">Networks</span>
+            </div>
+            <div class="contact-card-details">
+              <span class="label">Professional Profiles</span>
+              <span class="val">GitHub & LinkedIn</span>
+            </div>
+            <div class="contact-card-actions social-grid-actions">
+              <a href="https://github.com/binomariyan193-dotcom" target="_blank" rel="noopener noreferrer"
+                class="social-chip">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com/in/bino-mariyan-588280200" target="_blank" rel="noopener noreferrer"
+                class="social-chip">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="brand-monogram">BM</span>
+        <span class="footer-name">Bino Mariyan</span>
+      </div>
+      <p class="footer-copy">
+        &copy; <span id="current-year">2026</span> Bino Mariyan. Crafted with modern web standards, precision
+        aesthetics, and clean code.
+      </p>
+      <a href="#hero" class="back-to-top" aria-label="Back to top of page">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Project Architecture Modal -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog glass-card">
+      <div class="modal-header">
+        <h3 id="modal-title">Project Details</h3>
+        <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Injected via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Resume Modal -->
+  <div class="modal-backdrop" id="resume-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog glass-card resume-modal-dialog">
+      <div class="modal-header">
+        <div class="resume-header-title">
+          <h3>Bino Mariyan &bull; Resume Preview</h3>
+          <span class="badge-tag green">Verified Credentials</span>
+        </div>
+        <div class="resume-header-actions">
+          <button class="btn btn-sm btn-primary" id="print-resume-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print / Save PDF</span>
+          </button>
+          <button class="modal-close" id="resume-close-btn" aria-label="Close modal">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body resume-document" id="resume-doc">
+        <!-- Rendered Resume Layout -->
+        <div class="resume-paper">
+          <header class="resume-doc-header">
+            <h1>BINO MARIYAN</h1>
+            <div class="resume-doc-contact">
+              <span>📍 Guntur, India</span>
+              <span>📞 +91 81429-11443</span>
+              <span>✉️ binomariyan193@gmail.com</span>
+              <span>🔗 linkedin.com/in/bino-mariyan-588280200</span>
+              <span>💻 github.com/binomariyan193-dotcom</span>
+            </div>
+          </header>
+
+          <section class="resume-doc-section">
+            <h2 class="resume-sec-title">Summary</h2>
+            <p>
+              Motivated and dedicated Computer Science Master’s candidate with a strong foundation in AI/ML, Full-Stack
+              engineering, and cloud deployment. Experienced in architecting AI-native SaaS platforms, fine-tuning LLM
+              pipelines with RAG, and developing hybrid machine learning models. A proactive problem-solver and fast
+              learner looking to leverage strong software development and research skills to deliver high-impact
+              technical solutions.
+            </p>
+          </section>
+
+          <section class="resume-doc-section">
+            <h2 class="resume-sec-title">Education</h2>
+            <div class="resume-entry">
+              <div class="entry-header">
+                <strong>KL University</strong>
+                <span>Guntur, India | 2024 – 2026</span>
+              </div>
+              <div class="entry-sub">Master of Technology (M.Tech) in Computer Science and Engineering &bull;
+                <strong>CGPA: 8.5</strong>
+              </div>
+            </div>
+            <div class="resume-entry">
+              <div class="entry-header">
+                <strong>KL University</strong>
+                <span>Guntur, India | 2020 – 2024</span>
+              </div>
+              <div class="entry-sub">Bachelor of Technology (B.Tech) in Electronics and Communication Engineering &bull;
+                <strong>CGPA: 8.6</strong>
+              </div>
+            </div>
+            <div class="resume-entry">
+              <div class="entry-header">
+                <strong>Sri Chaitanya Junior College</strong>
+                <span>Guntur, India | 2018 – 2020</span>
+              </div>
+              <div class="entry-sub">Intermediate (MPC) &bull; <strong>CGPA: 8.1</strong></div>
+            </div>
+            <div class="resume-entry">
+              <div class="entry-header">
+                <strong>Bhashyam Public School</strong>
+                <span>Guntur, India | 2017 – 2018</span>
+              </div>
+              <div class="entry-sub">Secondary School Certificate (SSC) &bull; <strong>CGPA: 9.5</strong></div>
+            </div>
+          </section>
+
+          <section class="resume-doc-section">
+            <h2 class="resume-sec-title">Technical Skills</h2>
+            <ul class="resume-skills-list">
+              <li><strong>Languages:</strong> Python, C, SQL (PostgreSQL), HTML5, CSS3</li>
+              <li><strong>AI / Machine Learning:</strong> Generative AI, Large Language Models (LLMs), Prompt
+                Engineering, Multi-Agent Systems, RAG</li>
+              <li><strong>Web & Database:</strong> Full-Stack Development, REST APIs, Supabase, PostgreSQL, MongoDB,
+                Object-Oriented Programming (OOP)</li>
+              <li><strong>Cloud & DevOps:</strong> AWS, Microsoft Azure, Git, GitHub, Render, Vercel, Google Colab, SDLC
+              </li>
+            </ul>
+          </section>
+
+          <section class="resume-doc-section">
+            <h2 class="resume-sec-title">Projects</h2>
+            <div class="resume-entry">
+              <div class="entry-header">
+                <strong>Food-Processing-Operations-Platform</strong>
+                <span>FastAPI, Multi-Agent Systems, RAG, PostgreSQL</span>
+              </div>
+              <ul class="entry-bullets">
+                <li>Architected an industrial-grade, AI-native SaaS platform designed for agricultural and food
+                  processing facilities across dairy, grain milling, canning, meat, and bottling verticals.</li>
+                <li>Built real-time operational tracking covering batch tracking, line velocity, OEE metrics, and FEFO
+                  inventory management.</li>
+                <li>Implemented multi-agent orchestration alongside Retrieval-Augmented Generation (RAG) indexing food
+                  safety compliance standards (HACCP, ISO 22000, FDA FSMA, SQF Edition 9) for automated compliance
+                  audits and QC predictions.</li>
+                <li>Repository: github.com/binomariyan193-dotcom/Food-Processing-Operations-Platform-V2</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <div class="entry-header">
+                <strong>Hybrid Ensemble Model of XGBoost and LSTM for Personalized Medication</strong>
+                <span>Python, LSTM, XGBoost</span>
+              </div>
+              <ul class="entry-bullets">
+                <li>Engineered a clinical decision-support model to recommend personalized antihypertensive regimens by
+                  mining Electronic Health Records (EHR).</li>
+                <li>Coupled Long Short-Term Memory (LSTM) networks for longitudinal blood pressure trend modeling with
+                  XGBoost to capture high-dimensional non-linear clinical covariates and laboratory data.</li>
+                <li>Optimized model evaluation metrics to support personalized therapy selection and clinical risk
+                  mitigation.</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <div class="entry-header">
+                <strong>Raspberry Pi Infrared Imaging for Non-Destructive Testing (NDT)</strong>
+                <span>Raspberry Pi, FLIR Lepton, Python</span>
+              </div>
+              <ul class="entry-bullets">
+                <li>Designed and implemented an active thermographic testing apparatus utilizing a FLIR Lepton sensor
+                  integrated with a Raspberry Pi.</li>
+                <li>Applied advanced digital signal and image processing algorithms to capture and evaluate thermal
+                  responses of aerospace specimens for subsurface flaw and delamination detection.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="resume-doc-section">
+            <h2 class="resume-sec-title">Certifications</h2>
+            <ul class="resume-bullets">
+              <li><strong>AWS Certified Cloud Practitioner</strong> – Amazon Web Services</li>
+              <li><strong>Microsoft Certified: Azure Fundamentals (AZ-900)</strong> – Microsoft</li>
+              <li><strong>Microsoft Certified: Azure Data Fundamentals (DP-900)</strong> – Microsoft</li>
+            </ul>
+          </section>
+
+          <section class="resume-doc-section">
+            <h2 class="resume-sec-title">Languages & Extracurricular Interests</h2>
+            <p><strong>Languages:</strong> English (Proficient), Telugu (Native)</p>
+            <p><strong>Interests:</strong> Photography, Motorcycle Touring / Bike Riding, Open-Source Contributing</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>

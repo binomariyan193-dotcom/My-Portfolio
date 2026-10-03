@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 560" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#0A0F1D"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+
+    <!-- Neon Glow Gradients -->
+    <linearGradient id="neon-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="100%" stop-color="#4FACFE"/>
+    </linearGradient>
+    <linearGradient id="neon-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7928CA"/>
+      <stop offset="100%" stop-color="#B721FF"/>
+    </linearGradient>
+
+    <!-- Skin & Lighting Gradients -->
+    <linearGradient id="skin-base" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#C68642"/>
+      <stop offset="60%" stop-color="#B27335"/>
+      <stop offset="100%" stop-color="#8D5220"/>
+    </linearGradient>
+
+    <linearGradient id="skin-highlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.35"/>
+      <stop offset="40%" stop-color="#E0AC69" stop-opacity="0"/>
+      <stop offset="85%" stop-color="#E0AC69" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#B721FF" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <!-- Hair Gradient -->
+    <linearGradient id="hair-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Suit & Apparel Gradients -->
+    <linearGradient id="suit-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0B0F19"/>
+    </linearGradient>
+    <linearGradient id="inner-shirt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+
+    <!-- Filters for Glow -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="subtle-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Backdrop Glow Circles -->
+  <circle cx="160" cy="180" r="160" fill="url(#neon-cyan)" opacity="0.15" filter="url(#glow-cyan)"/>
+  <circle cx="350" cy="220" r="180" fill="url(#neon-purple)" opacity="0.18" filter="url(#glow-cyan)"/>
+
+  <!-- Futuristic Cyber Halo / Rings -->
+  <g opacity="0.5">
+    <ellipse cx="250" cy="240" rx="190" ry="190" fill="none" stroke="url(#neon-cyan)" stroke-width="1.5" stroke-dasharray="14 10"/>
+    <ellipse cx="250" cy="240" rx="215" ry="215" fill="none" stroke="url(#neon-purple)" stroke-width="1" stroke-dasharray="6 18"/>
+  </g>
+
+  <!-- Character Group -->
+  <g filter="url(#subtle-shadow)">
+    <!-- Shoulders & Torso / Modern Tech Blazer -->
+    <path d="M120 460 C120 400, 160 365, 205 355 L250 380 L295 355 C340 365, 380 400, 380 460 L420 560 L80 560 Z" fill="url(#suit-grad)"/>
+
+    <!-- Left & Right Blazer Lapels with Rim Lighting -->
+    <path d="M165 375 L225 470 L250 470 L205 355 Z" fill="#243048" opacity="0.9"/>
+    <path d="M335 375 L275 470 L250 470 L295 355 Z" fill="#1A2234" opacity="0.9"/>
+    
+    <!-- Neon Cyber Rim Edge On Lapels -->
+    <path d="M125 450 C130 405, 165 375, 205 355" stroke="url(#neon-cyan)" stroke-width="2.5" fill="none" opacity="0.8"/>
+    <path d="M375 450 C370 405, 335 375, 295 355" stroke="url(#neon-purple)" stroke-width="2.5" fill="none" opacity="0.8"/>
+
+    <!-- Inner Crewneck T-Shirt -->
+    <path d="M210 360 C210 360, 250 395, 290 360 L290 415 C290 440, 210 440, 210 415 Z" fill="url(#inner-shirt)"/>
+
+    <!-- Neck -->
+    <path d="M222 300 L222 365 C232 375, 268 375, 278 365 L278 300 Z" fill="url(#skin-base)"/>
+    <!-- Neck Shadow -->
+    <path d="M222 300 C240 325, 260 325, 278 300 L278 318 C260 340, 240 340, 222 318 Z" fill="#754316" opacity="0.45"/>
+
+    <!-- Head & Jaw -->
+    <path d="M190 200 C190 145, 310 145, 310 200 C310 260, 285 305, 250 315 C215 305, 190 260, 190 200 Z" fill="url(#skin-base)"/>
+    <path d="M190 200 C190 145, 310 145, 310 200 C310 260, 285 305, 250 315 C215 305, 190 260, 190 200 Z" fill="url(#skin-highlight)"/>
+
+    <!-- Ears -->
+    <path d="M182 205 C178 190, 192 185, 192 205 C192 225, 180 225, 182 205 Z" fill="#B27335"/>
+    <path d="M318 205 C322 190, 308 185, 308 205 C308 225, 320 225, 318 205 Z" fill="#9D6026"/>
+
+    <!-- Modern Styled Dark Hair with Volume -->
+    <path d="M185 180 C180 150, 195 110, 240 105 C290 100, 315 125, 320 155 C325 185, 312 205, 312 205 C305 180, 290 160, 245 162 C210 165, 192 185, 185 180 Z" fill="url(#hair-grad)"/>
+    <path d="M195 140 C220 115, 275 110, 310 135 C285 120, 235 120, 205 145 Z" fill="#38BDF8" opacity="0.25"/>
+
+    <!-- Eyebrows (Smart, confident) -->
+    <path d="M208 195 C218 190, 232 192, 238 198" stroke="#1E293B" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M262 198 C268 192, 282 190, 292 195" stroke="#1E293B" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Eyes (Focused, friendly) -->
+    <ellipse cx="224" cy="214" rx="9" ry="6" fill="#FFFFFF"/>
+    <circle cx="225" cy="214" r="4.5" fill="#1E293B"/>
+    <circle cx="223.5" cy="212" r="1.5" fill="#FFFFFF"/>
+
+    <ellipse cx="276" cy="214" rx="9" ry="6" fill="#FFFFFF"/>
+    <circle cx="275" cy="214" r="4.5" fill="#1E293B"/>
+    <circle cx="273.5" cy="212" r="1.5" fill="#FFFFFF"/>
+
+    <!-- Nose -->
+    <path d="M250 208 L246 242 C246 246, 254 246, 254 242 Z" fill="#9C6228" opacity="0.6"/>
+
+    <!-- Warm, Professional Smile -->
+    <path d="M232 264 C242 276, 258 276, 268 264" stroke="#5C310D" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Sleek Tech Glasses (Modern thin frame) -->
+    <rect x="204" y="202" width="40" height="24" rx="6" fill="rgba(0, 242, 254, 0.08)" stroke="#38BDF8" stroke-width="1.8"/>
+    <rect x="256" y="202" width="40" height="24" rx="6" fill="rgba(121, 40, 202, 0.08)" stroke="#818CF8" stroke-width="1.8"/>
+    <line x1="244" y1="212" x2="256" y2="212" stroke="#38BDF8" stroke-width="2"/>
+    <line x1="192" y1="210" x2="204" y2="212" stroke="#38BDF8" stroke-width="1.8"/>
+    <line x1="296" y1="212" x2="308" y2="210" stroke="#818CF8" stroke-width="1.8"/>
+  </g>
+
+  <!-- Futuristic Floating UI Particles -->
+  <g opacity="0.8">
+    <circle cx="110" cy="280" r="3" fill="#00F2FE"/>
+    <circle cx="390" cy="260" r="3.5" fill="#B721FF"/>
+    <circle cx="140" cy="160" r="2.5" fill="#38BDF8"/>
+    <circle cx="370" cy="140" r="2.5" fill="#A855F7"/>
+  </g>
+</svg>
